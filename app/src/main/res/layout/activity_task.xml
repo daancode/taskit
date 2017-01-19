@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editTaskTitle"
+                    android:layout_weight="1"
+                    android:hint="@string/taskEditTitleHint" />
+
+                <CheckBox
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbTaskCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    app:srcCompat="@drawable/ic_date_time"
+                    android:id="@+id/imgTaskDate"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="No date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvTaskDate"
+                    android:textAlignment="textStart"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_time"
+                    android:id="@+id/imgTaskTime" />
+
+                <TextView
+                    android:text="No time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvTaskTime"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        app:srcCompat="@drawable/ic_reminder"
+                        android:id="@+id/imgTaskReminder"
+                        android:layout_height="50dp" />
+
+                    <Switch
+                        android:text="Reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/swReminder"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="?android:attr/textColorTertiary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/spinPriority"
+                        android:spinnerMode="dialog"
+                        android:background="@null"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/taskEditDescHint"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:inputType="textCapSentences|textMultiLine"
+                android:id="@+id/editTaskDesc"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

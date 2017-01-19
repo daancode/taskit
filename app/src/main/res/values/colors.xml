@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008cff</color>
+    <color name="colorPrimaryDark">#232323</color>
+    <color name="colorAccent">#028dff</color>
+    <color name="controlColor">#212121</color>
+
+    <color name="no_priority">#8c8c8c</color>
+    <color name="low">#008cff</color>
+    <color name="medium">#ff9500</color>
+    <color name="high">#ff0008</color>
+</resources>

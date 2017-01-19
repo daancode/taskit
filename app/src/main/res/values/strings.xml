@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Taskit</string>
+
+    <string name="taskEditTitleHint">Title</string>
+    <string name="taskEditDescHint">Description</string>
+
+    <string name="mainAddTaskTitle">What you have to do ... ?</string>
+
+    <string name="deleteTaskDialogTitle">Delete task</string>
+    <string name="deleteTaskDialogMessage">Are you sure you want to delete this task?</string>
+
+    <string name="addFolderDialogTitle">Add new folder</string>
+    <string name="addFolderDialogEditError">Name Required</string>
+    <string name="addFolderDialogLastError">You can\'t delete last folder</string>
+
+    <string name="editFolderDialogTitle">Edit folder</string>
+</resources>

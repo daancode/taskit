@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:title="Add folder"
+        android:id="@+id/action_add_folder" />
+
+    <item android:title="Edit folder"
+        android:id="@+id/action_edit_folder" />
+
+    <item
+        android:id="@+id/action_sort_by_priority"
+        android:checkable="true"
+        android:title="Sort by priority" />
+
+    <item
+        android:id="@+id/action_show_completed"
+        android:checkable="true"
+        android:title="Show completed" />
+
+    <item
+        android:id="@+id/action_show_details"
+        android:checkable="true"
+        android:title="Show details" />
+
+    <!--<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
+        android:title="Settings"
+        app:showAsAction="never" />-->
+</menu>
